@@ -12,6 +12,7 @@ class Book {
   void discountedPrice (int discount) {
     // calculating price after discount
     price -= (price * (discount / 100)).round();
+    print('After discount price :- $price\n');
   }
 
   /// Method to show title and authors name
@@ -34,13 +35,11 @@ void main () {
   print('Before discount price :- ${book1.price}');
   // 10% discount
   book1.discountedPrice(10);
-  print('After discount price :- ${book1.price}\n');
 
   // book2 details
   book2.showDetails();
   print('Before discount price :- ${book2.price}');
   // 5% discount
   book2.discountedPrice(5);
-  print('After discount price :- ${book2.price}');
 
 }
